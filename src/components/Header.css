@@ -1,0 +1,180 @@
+.header{
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    padding:7px 10px;
+    background-color: white;
+    border-bottom: 2px solid lightgrey;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@media (min-width: 768px) {
+    .header{
+        padding:7px 50px;
+    } 
+}
+.header__left{
+    cursor: pointer;
+}
+.header__right{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.header__input{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    position: relative;
+    z-index: 100;
+}
+.suggaiton__area{
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    padding:5px;
+    height:fit-content;
+    max-height: 35vh;
+    overflow-y: scroll;
+    width:230px;
+    text-align: left;
+    pointer-events: visible;
+    border: 1px solid lightgrey;
+}
+.suggaiton__area.active{
+display:block;
+}
+.suggaiton__area.active .suggation{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 5px 10px;
+    background:rgb(255, 255, 255);
+    margin-bottom: 7px;
+    border-bottom: 2px solid lightgrey;
+    border-radius: 0 0 10px 10px;
+}
+.suggaiton__area.active .suggation:last-child{
+    border-bottom: none;
+    margin-bottom: none;
+}
+.suggaiton__area.active .suggation:first-child{
+ border-top: 7px;
+}
+.suggaiton__area.active .suggation:hover{
+transition: .3s;
+    background:rgba(199, 199, 199, 0.493);
+    cursor: pointer;
+}
+.suggaiton__area.active .suggation h4{
+    margin-left: 10px;
+}
+.suggaiton__area::-webkit-scrollbar{
+    width:0px;
+}
+
+.input__area{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background:rgba(211, 211, 211, 0.226);
+    padding: 5px 13px;
+    border-radius: 3px;
+}
+.input__area input{
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+.input__area input:focus {
+    outline: none;
+}
+.input__area .MuiSvgIcon-root{
+    cursor: pointer;
+    color: gray;
+}
+
+@media (max-width:568px) {
+    .header{
+        padding:7px 5px;
+    }
+    .header__left img{
+        width:70px;
+        object-fit: content;
+        margin-right: 5px;
+    }
+
+    .input__area{
+        display:none;
+    }
+
+}
+
+
+/**==================================this is for story ===========================*/
+.story{
+    display:flex;
+    max-width:70%;
+    overflow-x:scroll;
+    cursor: grab;
+    margin: 5px auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgrey;
+    border-radius: 3px;
+}
+.story::-webkit-scrollbar{
+    width:0;
+}
+.story ul{
+    display:flex;
+}
+.story li {
+    margin-right: 10px;
+    border-radius: 100%;
+}
+.story li:hover{
+    transform:scale(1.1);
+    transition:.3s ease-in-out;
+}
+.story img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 100%;
+    padding: 5px;
+    background: white;
+    cursor: pointer;
+}
+.img {
+    padding: 1px;
+    border-radius: 100%;
+    background: linear-gradient(to left, #983f3f87 , #8b8bc5)
+}
+.story a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px){
+
+    .story{
+        max-width:99%;
+        margin: 5px auto;
+        padding-right:10px;
+    }
+
+    .story img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        border-radius: 100%;
+        padding: 5px;
+        background: white;
+    }
+
+}

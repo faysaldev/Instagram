@@ -1,0 +1,316 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header {
+    padding: 20px 10px;
+}
+
+.profile__img {
+    width: 150px;
+    height: 150px;
+}
+
+.profile__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    object-fit: contain;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+header {
+    padding: 20px 10px;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile__info {
+    margin-left: 200px;
+}
+
+.profile_info_top {
+    display: flex;
+    align-items: center;
+}
+
+.profile_info_top h3 {
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+.editeProfile {
+    display: flex;
+    align-items: center;
+}
+
+.editeProfile button {
+    padding: 7px 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-right: 10px;
+    color: #888282;
+    cursor: pointer;
+}
+
+.editeProfile svg.MuiSvgIcon-root {
+    color: #888282;
+    cursor: pointer;
+}
+
+.follower__number {
+    display: flex;
+    align-items: center;
+}
+
+.follower__number span {
+    color: #888282;
+    margin: 0 15px;
+    font-size: unset;
+    font-weight: 500;
+}
+
+.follower__number span:first-child {
+    margin-left: 0;
+}
+
+.desciption {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+}
+
+.desciption h4 {
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.desciption span {
+    color: #888282;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.big__des {
+    color: #888282;
+    width: 420px;
+}
+
+.big__des a {color: black;}
+
+.header__bottom_story {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.single__story img {
+    width: 90px;
+    height: 90px;
+    border-radius: 99px;
+}
+.single__story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single__story span {
+    margin-top: 7px;
+    font-weight: 500;
+    color: #888282;
+    font-size: 15px;
+}
+
+.single__story img:hover {transform: scale(1.2);transition: .3s;cursor: pointer;}
+
+
+
+.main__profile {
+    padding: 50px 60px;
+    width: 55%;
+}
+
+.post__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.single svg.MuiSvgIcon-root {
+    color: black;
+    font-size: 19px;
+}
+
+.single:first-child{
+    border-top: 1px solid;
+    margin-top: -9px;
+}
+.single h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.main__profile hr {
+    background: azure;
+    color: lightgray;
+}
+
+
+
+.profile__posts {
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    gap: 25px;
+}
+
+.single__post {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.single__post img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000024;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.heart {display: flex;align-items: center;justify-content: center;font-weight: bold;font-size: 17px;cursor: pointer;}
+
+.heart p {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.single__post:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.heart:first-child {
+    margin-right: 15px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #888282;
+}
+
+footer a {
+    padding: 3px 13px;
+    font-size: 14px;
+    font-weight: 400;
+}
+footer a:hover{
+    color:black;
+    transition:.1s;
+    font-weight:700;
+}
+.footer__bottom svg.MuiSvgIcon-root {
+    font-size: 13px;
+}
+
+.footer__bottom {
+    padding-top: 20px;
+}
+
+.footer__bottom a {
+}
+
+.footer__middle {
+    padding-top: 11px;
+}
+
+
+@media (max-width:768px){
+    .profile__info {
+        margin-left: 0px;
+        width: 100%;
+        margin-left: 30px;
+        width: fit-content;
+    }
+    
+    .header__top {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .profile__img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    header {
+        padding: 20px 0 !important;
+    }
+
+    .main__profile hr{
+        width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main__profile {
+        padding: 50px 60px;
+        width: 90%;
+    }
+
+
+    .profile__posts {
+        gap: 5px;
+    }
+
+    .heart {font-size: 15px;}
+
+.heart p {
+    margin-left: 3px;
+    font-size: 17px;
+}
+
+}

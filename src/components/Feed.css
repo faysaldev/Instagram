@@ -1,0 +1,253 @@
+.feed {
+    margin-top: 15px;
+}
+.post__headerleft img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    padding: 5px;
+    background: linear-gradient(to left, #983f3f87 , #8b8bc5);
+}
+.post__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.post {
+    width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px -5px #80808069;
+    padding: 10px 15px;
+    margin-bottom:25px;
+}
+.post__headerleft {
+    display: flex;
+    align-items: center;
+}
+
+.post__headerleft p {
+    margin-left: 11px;
+    margin-right: 11px;
+    font-weight: 700;
+}
+.post__headerleft span {
+  font-size: 11px;
+  color: gray;
+}
+
+
+
+.post__headerRight {
+    position: relative;
+}
+
+.deletemenu {
+    position: absolute;
+    top: 35px;
+    display: none;
+    flex-direction: column;
+}
+
+.deletemenu span {
+    padding: 5px 7px;
+    text-align: center;
+    background: beige;
+    margin-top: 7px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.deletemenu span:first-child {
+    margin-top: 7px;
+}
+
+.post__headerRight:hover .deletemenu{
+    display: flex;
+}
+
+
+
+/*===============for post edite===========*/
+.update__text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.update__text input {
+    flex: 1;
+    padding: 5px 10px;
+    border: 1px solid lightgreen;
+
+    margin-right: 9px;
+}
+.update__text input:focus{
+    border: none;
+    border-bottom:3px solid deepskyblue;
+}
+.update__text button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.update__text input:focus {
+    outline: none;
+}
+
+
+
+
+
+.post__img{
+    margin-top: 10px;width: 100%; height: 100%; object-fit: contain;
+}
+
+.post__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.post__fotter {display: flex;align-items: center;justify-content: space-between;padding-top: 5px;border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.commets form {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-top: 1px solid lightgray;
+}
+
+.commets form input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    margin-left: 10px;
+}
+.commets form input:focus{
+    outline:none;
+}
+.commets form button:focus{
+outline:none;
+}
+.commets form button {
+    height: 100%;
+    border: 1px solid lightgray;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+    width:fit-content;
+}
+
+.comment h4 {
+    margin-left: 9px;
+    background: #f7cf9c;
+    padding: 11px;
+    border-radius: 10px 10px 11px 1px;
+}
+
+.comment h4 span {
+    color: #5c5656;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .post {
+        width: initial;
+        margin: 0 auto;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 30px -5px #80808069;
+        padding: 10px 15px;
+        margin-bottom:25px;
+    }
+}
+
+.allcomments {
+    max-height: 30vh;
+    overflow: auto;
+}
+.allcomments::-webkit-scrollbar{
+    width: 0;
+}
+
+.imgupload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.youN__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.imgupload input {
+    margin-bottom: 10px;
+    border: 2px solid lightblue;
+    padding: 7px 10px;
+    width: 100%;
+}
+.imgupload input:nth-child(3){
+    border:none;
+}
+
+.imgupload input:nth-child(5){
+    border:1px solid lightgray;
+    cursor: pointer;
+}
+.imgupload progress {
+    display: none;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.imgupload progress.active{
+    display: block;
+}
+.upload {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: deepskyblue;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.upload .MuiSvgIcon-root {
+    margin-right: 5px;
+    font-weight: bold;
+}

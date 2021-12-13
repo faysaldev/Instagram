@@ -1,0 +1,26 @@
+.app{
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+li{
+  list-style-type: none;
+}
+
+div.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+div.preloader img {
+  width: 15%;
+}
+
+div.preloader.hide{
+  display: none !important;
+}
